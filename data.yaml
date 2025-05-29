@@ -1,0 +1,11 @@
+path: /rtdetr/data/datasets/coco128
+train: images/train
+val: images/valid
+names:
+  0: Brain Edema
+  1: Brain Enhancing Tumor
+  2: Brain Non-enhancing Tumor
+  3: Left Kidney
+  4: Liver
+  5: Right Kidney
+  6: Spleen

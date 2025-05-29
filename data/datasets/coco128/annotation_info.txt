@@ -1,0 +1,25 @@
+
+# Slake MRI 데이터셋 Detection Annotation 정보
+
+## 데이터 소스
+실제 detection.json 파일의 바운딩 박스 정보를 사용하여 YOLO 형식으로 변환했습니다.
+
+## Detection.json 형식
+원본: [{"Brain Edema": [72.0, 128.0, 45.0, 60.0]}]
+- 클래스명: "Brain Edema"
+- 바운딩 박스: [x, y, width, height] (픽셀 좌표)
+
+## YOLO 변환 과정
+1. 픽셀 좌표를 0-1로 정규화
+2. 좌상단 (x,y) + (width,height) → 중심점 (x_center, y_center) + (width, height)
+3. class_id x_center y_center width height 형식으로 저장
+
+## 주의사항
+- detection.json이 없는 이미지는 제외됨
+- 빈 detection이 있는 경우 빈 annotation 파일 생성
+- 모든 좌표는 이미지 크기로 정규화됨
+
+## 파일 구조
+- images/: 원본 이미지들
+- labels/: YOLO 형식 annotation 파일들 (실제 detection.json 기반)
+- data.yaml: 클래스 정보 및 경로 설정
