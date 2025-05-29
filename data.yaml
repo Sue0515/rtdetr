@@ -1,4 +1,4 @@
-path: /rtdetr/data/datasets/coco128
+path: /root/rtdetr/data/datasets/coco128
 train: images/train
 val: images/valid
 names:
