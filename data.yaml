@@ -1,11 +1,38 @@
-path: /root/rtdetr/data/datasets/coco128
+path: /root/coco128
 train: images/train
 val: images/valid
 names:
-  0: Brain Edema
-  1: Brain Enhancing Tumor
-  2: Brain Non-enhancing Tumor
-  3: Left Kidney
-  4: Liver
-  5: Right Kidney
-  6: Spleen
+  0: Bladder
+  1: Brain Stem
+  2: Colon
+  3: Duodenum
+  4: Esophagus
+  5: Heart
+  6: Larynx
+  7: Left Ear
+  8: Left Eye
+  9: Left Femoral Head
+  10: Left Kidney
+  11: Left Lung
+  12: Left Mandible
+  13: Left Parotid
+  14: Left Temporal Lobe
+  15: Liver
+  16: Liver Cancer
+  17: Lung Cancer
+  18: Rectum
+  19: Right Ear
+  20: Right Eye
+  21: Right Femoral Head
+  22: Right Kidney
+  23: Right Lung
+  24: Right Mandible
+  25: Right Parotid
+  26: Right Temporal Lobe
+  27: Small Bowel
+  28: Spinal Cord
+  29: Spleen
+  30: Stomach
+  31: Tooth
+  32: Trachea
+
