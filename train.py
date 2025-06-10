@@ -13,7 +13,7 @@ try:
     print("훈련 시작...")
     results = model.train(
         data="data.yaml", 
-        epochs=10000, 
+        epochs=1000, 
         imgsz=640, 
         batch=20,
         verbose=True  # 더 많은 출력
